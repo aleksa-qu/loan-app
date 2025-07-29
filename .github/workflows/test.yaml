@@ -17,7 +17,7 @@ jobs:
 
       - name: Run application locally
         run: |
-          npm start & 
+          npm start &
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps

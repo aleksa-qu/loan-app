@@ -5,12 +5,14 @@ interface ContainerProps {
   children: React.ReactNode;
 }
 
-const Container = forwardRef<HTMLDivElement, ContainerProps>(({ children, ...props }, ref) => {
-  return (
+const Container = forwardRef<HTMLDivElement, ContainerProps>(
+  ({ children, ...props }, ref) => {
+    return (
       <div ref={ref} className="Container" {...props}>
         {children}
       </div>
-  );
-});
+    );
+  },
+);
 
 export default Container;
